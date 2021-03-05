@@ -1,0 +1,96 @@
+/* pages/detail/detail.wxss */
+.img{
+  width: 100%;
+}
+.img image{
+  width: 110%;
+}
+
+.title{
+   font-size: 50rpx;
+   color: red;
+   text-align: center;
+}
+.author{
+  text-align: right;
+  color: blueviolet;
+  font-size: 40rpx;
+  padding-right: 20rpx;
+}
+.content{
+  padding: 50rpx;
+  /* font-family: cursive; */
+  font-size: 33rpx;
+}
+
+.contents{
+  color: rgb(68, 15, 15);
+  word-break: break-all;
+}
+
+.container{
+  /* position: relative; */
+  position: fixed;
+  
+}
+.container image{
+  width: 100vw;
+  height: 100vh;
+}
+.other{
+  position: absolute;
+}
+
+.comment{
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+  border: 1px solid #666;
+}
+/* 按钮 */
+.bt{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 280rpx;
+  margin-top: 20rpx;
+}
+ /* 评论区 */
+ .commentarea{
+   margin-top: 10rpx;
+   margin-bottom: 10rpx;
+   padding: 10rpx;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #666;
+ }
+ .comment_pic{
+   flex:1;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .comment_pic image{
+   width: 60%;
+   border-radius: 50%;
+ }
+ .comment_info{
+  flex:5;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+.comment_detail{
+  display: flex;
+  justify-content: space-between;
+}
+.comment_detail .author{
+  font-size:28rpx;
+  color: black;
+}
+.comment_detail .date{
+  color: #666;
+  font-size: 24rpx;
+}
+.comment_content{
+  font-size: 28rpx;
+  color: black;
+}

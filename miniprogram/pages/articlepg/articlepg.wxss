@@ -1,0 +1,11 @@
+@import "../index/styles.wxss";
+
+/* 加号图标 */
+.plus{
+  padding-top: 10vh;
+  text-align: center;
+}
+.plus image{
+  width: 200rpx;
+  height: 200rpx;
+}

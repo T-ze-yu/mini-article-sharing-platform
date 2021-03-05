@@ -1,0 +1,39 @@
+<!-- 轮播图 -->
+<navigator class="top">
+<swiper autoplay="true" interval="4000" indicator-color="translucent" 
+indicator-dots indicator-active-color="red" circular>
+   <swiper-item><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/Rotation-chart/人文.png" class="topimg"></image></swiper-item>
+   <swiper-item><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/Rotation-chart/故事.jpg" class="topimg"></image></swiper-item>
+   <swiper-item><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/Rotation-chart/科技.jpg" class="topimg"></image></swiper-item>
+   <swiper-item><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/Rotation-chart/自然.jpg" class="topimg"></image></swiper-item>
+</swiper>
+</navigator>
+<!-- 作品列表 -->
+
+<view class="work-list">
+  <navigator url="../detail/detail?id={{item._id}}" class="work-item" wx:for="{{worklist}}" wx:key="index">
+  <!-- 图片容器 -->
+   <view class="work-img">
+    <!-- 图片 -->
+    <image src="{{item.img}}"></image>
+    <!-- 详情 -->
+    <view class="details">
+      <!-- 播放量 -->
+      <view class="play-count">
+        <!-- <text class="play">观看：88</text> -->
+      </view>
+       <!-- 评论量 -->
+       <view class="comment-count">
+        <!-- <text class="comment">评论：99</text> -->
+       </view>
+    </view>
+   </view>
+  <!-- 文字 -->
+   <view class="work-word">
+    {{item.title}}
+   </view>
+  </navigator>
+</view>
+
+----------------------------------------------
+<text class="tp">欢迎通过“我的文章中的加号”分享你的感动！你的才华！</text>

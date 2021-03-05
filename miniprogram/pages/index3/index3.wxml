@@ -1,0 +1,17 @@
+
+<form bindsubmit="btnSub">
+  <input class="bk" name="title" placeholder="标题"></input>
+  <input class="bk" name="author" placeholder="笔名" ></input>
+  <input class="bk" name="img" placeholder="图片" bindtap="upimg">
+  </input>
+   <image src="{{sb}}"></image>
+  <textarea name="content" placeholder="内容（大于25字）" maxlength="-1" 
+  bindblur="limit2" bindconfirm="limit2" bindinput="limit2"><text></text></textarea>
+ <navigator url="../index4/index4" open-type="navigate">
+     <view wx:if="{{limit > 50}}">
+       <button  type="primary" form-type="submit">发表</button>
+      </view>
+  </navigator>
+  <button form-type="reset">重置</button>
+</form>
+

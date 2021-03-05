@@ -1,0 +1,14 @@
+/* 轮播图 */
+.topimg{
+  width: 100%;
+}
+.topimg image{
+  width: 110%;
+}
+
+@import "../index/styles.wxss";
+
+.tp{
+  text-align: center;
+  color: chocolate;
+}

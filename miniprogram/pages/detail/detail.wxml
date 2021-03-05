@@ -1,0 +1,44 @@
+<!--pages/detail/detail.wxml-->
+<view class="container" >
+<image src="{{bk_id}}"></image> </view>
+<view class="other"  bindlongtap="transformation">
+   <image class="img" src="{{detail.img}}"></image>
+   <view class="title">{{detail.title}}</view>
+   <view class="author">---{{detail.author}}</view>
+   <view class="content">
+    <text decode space="emsp" class="contents" selectable>{{detail.content}}</text> </view>
+
+    ----------------
+ <view>评论区：</view>
+<view class="commentarea" wx:for="{{comment}}" wx:key="index">
+    <view class="comment_pic"> <image src="{{item.pic}}" mode="widthFix"></image></view>
+    <view class="comment_info">
+     <view class="comment_detail">
+      <text class="author">{{item.author}}：</text>
+     </view>
+     <view class="comment_content">{{item.content}}</view>
+    </view>
+</view>
+
+
+<!-- 发表评论 -->
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" type="warn"
+     open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="land">
+     登录评论 </button>
+    <block wx:else>   
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="covre"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+      <form>
+       <input class="comment" bindinput="qz"></input>
+               <button class="bt" size="mini"  bindtap="sj">发表</button>
+               <button class="bt" size="mini" form-type="reset">重置</button>
+      </form>
+    </block>
+  </view>
+
+</view>
+
+
+

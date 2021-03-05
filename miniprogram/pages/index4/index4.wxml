@@ -1,0 +1,8 @@
+<!--pages/index4/index4.wxml-->
+<view>
+    <text>\n\n\n\n\n\n\n</text>
+</view>
+
+<navigator url="../index/index" open-type="switchTab">
+         <button type="primary">发表成功</button>
+</navigator>

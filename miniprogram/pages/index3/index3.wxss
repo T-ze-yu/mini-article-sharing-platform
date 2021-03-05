@@ -1,0 +1,14 @@
+input{
+  border: 1rpx solid #888
+}
+.bk{ height:70rpx}
+
+textarea{ 
+  border: 1rpx solid #888;
+  width: auto;
+  height: 1170rpx;
+}
+
+/* .content{
+    height: 500rpx;
+  } */

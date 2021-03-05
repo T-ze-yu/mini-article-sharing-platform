@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" type="warn"
+     open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="land">
+     登录 </button>
+    <block wx:else>   
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="covre"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+ </view>
+
+<text>\n</text>
+<view class="big-warp">
+<view class="warp">
+  <navigator url="../iconpg/iconpg" open-type="navigate">
+  <view class="num"> <image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/userPic/标签.jpg"></image>
+  <text class="tx">我的标签</text> </view>
+  </navigator>
+  <navigator url="../iconpg/iconpg" open-type="navigate">
+  <view class="num"><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/userPic/金币.jpg"></image>
+   <text class="tx"> 我的金币</text></view>
+   </navigator>
+<navigator url="../iconpg/iconpg" open-type="navigate">
+  <view class="num"><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/userPic/足迹.png"></image>
+   <text class="tx">我的足迹</text> </view>
+   </navigator>
+<navigator url="../articlepg/articlepg" open-type="navigate">
+  <view class="num"><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/userPic/文章.jpg"></image>
+   <text class="tx">我的文章</text> </view>
+   </navigator>
+<navigator url="../feedback/feedback" open-type="navigate">
+  <view class="num"><image src="cloud://yunsy-x3zes.7975-yunsy-x3zes-1302194096/userPic/反馈.jpg"></image>  <text class="tx"> 反馈</text></view>
+   </navigator>
+</view>
+</view>
+<!-- <navigator url="../index3/index3" open-type="navigate">
+ <view>我要写文章</view>
+</navigator> -->

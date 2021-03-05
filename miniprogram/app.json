@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/index4/index4",
+    "pages/iconpg/iconpg",
+    "pages/goldpg/goldpg",
+    "pages/footpg/footpg",
+    "pages/articlepg/articlepg",
+    "pages/feedback/feedback",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff6347",
+    "navigationBarTitleText": "独角兽",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor": "#FF69B4",
+    "backgroundColor": "DDA0DD",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "文章",
+      "iconPath": "icon/好书1.png",
+      "selectedIconPath": "icon/好书2.png"
+
+    },
+    
+    {
+      "pagePath": "pages/index2/index2",
+      "text": "我的",
+      "iconPath": "icon/我的.png",
+      "selectedIconPath": "icon/我的2.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
